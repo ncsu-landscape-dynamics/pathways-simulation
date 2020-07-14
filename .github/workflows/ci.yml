@@ -79,6 +79,30 @@ jobs:
         pip install black
         black --check --diff .
 
+  super-linter:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    -  name: Lint code base
+       uses: docker://github/super-linter:v3.2.0
+       env:
+         # Listing linters just to have Python (Pylint) disabled because
+         # of the missing dependencies.
+         VALIDATE_BASH: true
+         VALIDATE_CSS: true
+         VALIDATE_DOCKER: true
+         VALIDATE_JAVASCRIPT_ES: true
+         VALIDATE_JAVASCRIPT_STANDARD: true
+         VALIDATE_JSON: true
+         VALIDATE_MD: true
+         VALIDATE_PERL: true
+         VALIDATE_POWERSHELL: true
+         VALIDATE_XML: true
+         VALIDATE_YAML: true
+
+
   test:
 
     runs-on: ubuntu-18.04
