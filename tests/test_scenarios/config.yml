@@ -78,6 +78,7 @@ contamination:
 inspection:
   unit: boxes
   within_box_proportion: 1
+  tolerance_level: 0.005
   sample_strategy: hypergeometric
   min_boxes: 0
   proportion:

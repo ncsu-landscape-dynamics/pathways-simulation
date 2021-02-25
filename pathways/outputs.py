@@ -19,7 +19,7 @@
 Various outputs for pathways simulation
 
 .. codeauthor:: Vaclav Petras <wenzeslaus gmail com>
-.. codeauthor:: Kellyn P. Montgomery
+.. codeauthor:: Kellyn P. Montgomery <kellynmontgomery gmail com>
 """
 
 from __future__ import print_function, division
@@ -294,7 +294,7 @@ class SuccessRates(object):
 
         :param checked_ok: True if no contaminant was found in consignment
         :param actually_ok: True if the consignment actually does not have contamination
-        :param shipmemt: The shipement itself (for reporting purposes)
+        :param shipmemt: The shipment itself (for reporting purposes)
         """
         if checked_ok and actually_ok:
             self.true_negative += 1
@@ -316,6 +316,7 @@ class SuccessRates(object):
 def config_to_simplified_simulation_params(config):
     """Convert configuration into a simplified set of selected parameters"""
     sim_params = types.SimpleNamespace(
+        tolerance_level="",
         contamination_unit="",
         contamination_type="",
         contamination_param="",
@@ -332,6 +333,7 @@ def config_to_simplified_simulation_params(config):
         selection_param_2="",
     )
 
+    sim_params.tolerance_level = config["inspection"]["tolerance_level"]
     sim_params.contamination_unit = config["contamination"]["contamination_unit"]
     sim_params.contamination_type = config["contamination"]["contamination_rate"][
         "distribution"
@@ -487,6 +489,7 @@ def print_totals_as_text(num_consignments, config, totals):
             "\t minimum proportion of items inspected within box: "
             "{sim_params.within_box_proportion}".format(**locals())
         )
+    print("\t tolerance level: {sim_params.tolerance_level}".format(**locals()))
     print("\n")
 
     print("Simulation results: (averaged across all simulation runs)")
@@ -497,6 +500,10 @@ def print_totals_as_text(num_consignments, config, totals):
         )
     )
     print("Avg. num. consignments slipped: {totals.false_neg:,.0f}".format(**locals()))
+    print(
+        "Avg. num. slipped consignments within tolerance "
+        "level: {totals.missed_tolerance:,.0f}".format(**locals())
+    )
     print(
         "Avg. num. consignments intercepted: {totals.intercepted:,.0f}".format(
             **locals()

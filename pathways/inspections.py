@@ -19,7 +19,7 @@
 Inspections of consignments in pathways simulation
 
 .. codeauthor:: Vaclav Petras <wenzeslaus gmail com>
-.. codeauthor:: Kellyn P. Montgomery
+.. codeauthor:: Kellyn P. Montgomery <kellynmontgomery gmail com>
 """
 
 from __future__ import print_function, division

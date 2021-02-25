@@ -19,7 +19,7 @@
 Single and multiple runs of simulation for evaluation of pathways
 
 .. codeauthor:: Vaclav Petras <wenzeslaus gmail com>
-.. codeauthor:: Kellyn P. Montgomery
+.. codeauthor:: Kellyn P. Montgomery <kellynmontgomery gmail com>
 """
 
 from __future__ import print_function, division
@@ -82,6 +82,7 @@ def simulation(
     else:
         reporter = MuteReporter()
     success_rates = SuccessRates(reporter)
+    missed_tolerance = 0
     num_inspections = 0
     total_num_boxes = 0
     total_num_items = 0
@@ -104,6 +105,7 @@ def simulation(
     add_contaminant = get_contaminant_function(config)
     is_inspection_needed = get_inspection_needed_function(config)
     sample = get_sample_function(config)
+    tolerance_level = config["inspection"]["tolerance_level"]
 
     for unused_i in range(num_consignments):
         consignment = consignment_generator.generate_consignment()
@@ -152,6 +154,8 @@ def simulation(
         true_contamination_rate += consignment_contamination_rate(consignment)
         if not consignment_actually_ok:
             if consignment_checked_ok:
+                if consignment_contamination_rate(consignment) < tolerance_level:
+                    missed_tolerance += 1
                 missed_contamination_rate.append(
                     consignment_contamination_rate(consignment)
                 )
@@ -204,6 +208,7 @@ def simulation(
     simulation_results = types.SimpleNamespace(
         missing=missing,
         false_neg=false_neg,
+        missed_tolerance=missed_tolerance,
         intercepted=success_rates.true_positive,
         num_inspections=num_inspections,
         total_num_boxes=total_num_boxes,
@@ -265,6 +270,7 @@ def run_simulation(
     totals = types.SimpleNamespace(
         missing=0,
         false_neg=0,
+        missed_tolerance=0,
         intercepted=0,
         num_inspections=0,
         num_boxes=0,
@@ -305,6 +311,7 @@ def run_simulation(
         # totals are an average of all simulation runs
         totals.missing += result.missing
         totals.false_neg += result.false_neg
+        totals.missed_tolerance += result.missed_tolerance
         totals.intercepted += result.intercepted
         totals.num_inspections += result.num_inspections
         totals.num_boxes += result.total_num_boxes
@@ -336,6 +343,7 @@ def run_simulation(
     # make these relative (reusing the variables)
     totals.missing /= float(num_simulations)
     totals.false_neg /= float(num_simulations)
+    totals.missed_tolerance /= float(num_simulations)
     totals.intercepted /= float(num_simulations)
     totals.num_inspections /= float(num_simulations)
     totals.num_boxes /= float(num_simulations)

@@ -34,6 +34,7 @@ inspection:
   unit: boxes
   within_box_proportion: 1
   sample_strategy: proportion
+  tolerance_level: 0
   min_boxes: 0
   proportion:
     value: 0.02

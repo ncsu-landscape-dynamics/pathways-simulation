@@ -35,6 +35,7 @@ inspection:
   within_box_proportion: 1
   sample_strategy: hypergeometric
   min_boxes: 0
+  tolerance_level: 0
   proportion:
     value: 0.02
   hypergeometric:
