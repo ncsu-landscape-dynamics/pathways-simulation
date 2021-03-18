@@ -85,7 +85,13 @@ jobs:
     strategy:
       max-parallel: 4
       matrix:
-        python-version: [3.6, 3.7, 3.8, 3.9]
+        python-version:
+        - "3.6"
+        - "3.7"
+        - "3.8"
+        - "3.9"
+        - "pypy-3.6"
+        - "pypy-3.7"
 
     steps:
     - uses: actions/checkout@v2
@@ -108,7 +114,13 @@ jobs:
     strategy:
       max-parallel: 2
       matrix:
-        python-version: [3.6, 3.7, 3.8, 3.9]
+        python-version:
+        - "3.6"
+        - "3.7"
+        - "3.8"
+        - "3.9"
+        - "pypy-3.6"
+        - "pypy-3.7"
 
     steps:
     - uses: actions/checkout@v2
