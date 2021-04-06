@@ -1,17 +1,17 @@
 name,consignment name,inspection name,aqim_file,consignment/boxes/min,consignment/boxes/max,consignment/items_per_box/default,contamination/contamination_unit,contamination/contamination_rate/distribution,contamination/contamination_rate/parameters,contamination/arrangement,contamination/clustered/distribution,contamination/clustered/contaminated_units_per_cluster,contamination/clustered/random/cluster_item_width,inspection/unit,inspection/sample_strategy,inspection/hypergeometric/detection_level,inspection/selection_strategy,inspection/within_box_proportion
-consignment scenario 1,AQIM,box hypergeometric 0.1,aqim_all.csv,,,200,box,beta,"[0.0102, 5.3839]",clustered,random,2,,boxes,hypergeometric,0.1,random,1
-consignment scenario 2,Maritime,box hypergeometric 0.1,aqim_all.csv,,,700,box,beta,"[0.0102, 5.3839]",clustered,random,2,,boxes,hypergeometric,0.1,random,1
-consignment scenario 3,Direct-to-consumer,box hypergeometric 0.1,,1,20,50,box,beta,"[0.0102, 5.3839]",clustered,random,2,,boxes,hypergeometric,0.1,random,1
-consignment scenario 4,High variability (box),box hypergeometric 0.1,aqim_all.csv,,,200,box,beta,"[0.0088, 2.9121]",clustered,random,2,,boxes,hypergeometric,0.1,random,1
-consignment scenario 5,Mid variability (box),box hypergeometric 0.1,aqim_all.csv,,,200,box,beta,"[0.0102, 5.3839]",clustered,random,2,,boxes,hypergeometric,0.1,random,1
-consignment scenario 6,Low variability (box),box hypergeometric 0.1,aqim_all.csv,,,200,box,beta,"[0.0166, 41.59]",clustered,random,2,,boxes,hypergeometric,0.1,random,1
-consignment scenario 7,High variability (item),box hypergeometric 0.1,aqim_all.csv,,,200,item,beta,"[0.0088, 2.9121]",clustered,random,180,200,boxes,hypergeometric,0.1,random,1
-consignment scenario 8,Mid variability (item),box hypergeometric 0.1,aqim_all.csv,,,200,item,beta,"[0.0102, 5.3839]",clustered,random,180,200,boxes,hypergeometric,0.1,random,1
-consignment scenario 9,Low variability (item),box hypergeometric 0.1,aqim_all.csv,,,200,item,beta,"[0.0166, 41.59]",clustered,random,180,200,boxes,hypergeometric,0.1,random,1
-consignment scenario 10,Random (box),box hypergeometric 0.1,aqim_all.csv,,,200,box,beta,"[0.0102, 5.3839]",random,,,,boxes,hypergeometric,0.1,random,1
-consignment scenario 11,Random (item),box hypergeometric 0.1,aqim_all.csv,,,200,item,beta,"[0.0102, 5.3839]",random,,,,boxes,hypergeometric,0.1,random,1
-consignment scenario 12,Small clusters (box),box hypergeometric 0.1,aqim_all.csv,,,200,box,beta,"[0.0102, 5.3839]",clustered,random,2,,boxes,hypergeometric,0.1,random,1
-consignment scenario 13,Large clusters (box),box hypergeometric 0.1,aqim_all.csv,,,200,box,beta,"[0.0102, 5.3839]",clustered,random,5,,boxes,hypergeometric,0.1,random,1
-consignment scenario 14,Small clusters (item),box hypergeometric 0.1,aqim_all.csv,,,200,item,beta,"[0.0102, 5.3839]",clustered,random,38,50,boxes,hypergeometric,0.1,random,1
-consignment scenario 15,Large clusters (item),box hypergeometric 0.1,aqim_all.csv,,,200,item,beta,"[0.0102, 5.3839]",clustered,random,300,400,boxes,hypergeometric,0.1,random,1
-consignment scenario 16,Continuous clusters (item),box hypergeometric 0.1,aqim_all.csv,,,200,item,beta,"[0.0102, 5.3839]",clustered,continuous,100,,boxes,hypergeometric,0.1,random,1
+consignment scenario 1,Air,box hypergeometric 0.1,,200,200,200,item,beta,"[0.48657, 69.02343]",clustered,continuous,100,,boxes,hypergeometric,0.1,random,1
+consignment scenario 2,Maritime,box hypergeometric 0.1,,100,100,700,item,beta,"[0.48657, 69.02343]",clustered,continuous,100,,boxes,hypergeometric,0.1,random,1
+consignment scenario 3,Direct-to-consumer,box hypergeometric 0.1,,10,10,50,item,beta,"[0.48657, 69.02343]",clustered,continuous,100,,boxes,hypergeometric,0.1,random,1
+consignment scenario 4,High variability (box),box hypergeometric 0.1,aqim_box_insp_unit.csv,,,200,box,beta,"[0.0048657, 0.6902343]",clustered,random,2,,boxes,hypergeometric,0.1,random,1
+consignment scenario 5,Mid variability (box),box hypergeometric 0.1,aqim_box_insp_unit.csv,,,200,box,beta,"[0.48657, 69.02343]",clustered,random,2,,boxes,hypergeometric,0.1,random,1
+consignment scenario 6,Low variability (box),box hypergeometric 0.1,aqim_box_insp_unit.csv,,,200,box,beta,"[48.657, 6902.343]",clustered,random,2,,boxes,hypergeometric,0.1,random,1
+consignment scenario 7,High variability (item),box hypergeometric 0.1,aqim_box_insp_unit.csv,,,200,item,beta,"[0.0048657, 0.6902343]",clustered,continuous,100,,boxes,hypergeometric,0.1,random,1
+consignment scenario 8,Mid variability (item),box hypergeometric 0.1,aqim_box_insp_unit.csv,,,200,item,beta,"[0.48657, 69.02343]",clustered,continuous,100,,boxes,hypergeometric,0.1,random,1
+consignment scenario 9,Low variability (item),box hypergeometric 0.1,aqim_box_insp_unit.csv,,,200,item,beta,"[48.657, 6902.343]",clustered,continuous,100,,boxes,hypergeometric,0.1,random,1
+consignment scenario 10,Random (box),box hypergeometric 0.1,aqim_box_insp_unit.csv,,,200,box,beta,"[0.48657, 69.02343]",random,,,,boxes,hypergeometric,0.1,random,1
+consignment scenario 11,Random (item),box hypergeometric 0.1,aqim_box_insp_unit.csv,,,200,item,beta,"[0.48657, 69.02343]",random,,,,boxes,hypergeometric,0.1,random,1
+consignment scenario 12,Small clusters (box),box hypergeometric 0.1,aqim_box_insp_unit.csv,,,200,box,beta,"[0.48657, 69.02343]",clustered,random,2,,boxes,hypergeometric,0.1,random,1
+consignment scenario 13,Large clusters (box),box hypergeometric 0.1,aqim_box_insp_unit.csv,,,200,box,beta,"[0.48657, 69.02343]",clustered,random,5,,boxes,hypergeometric,0.1,random,1
+consignment scenario 14,Small clusters (item),box hypergeometric 0.1,aqim_box_insp_unit.csv,,,200,item,beta,"[0.48657, 69.02343]",clustered,random,38,50,boxes,hypergeometric,0.1,random,1
+consignment scenario 15,Large clusters (item),box hypergeometric 0.1,aqim_box_insp_unit.csv,,,200,item,beta,"[0.48657, 69.02343]",clustered,random,300,400,boxes,hypergeometric,0.1,random,1
+consignment scenario 16,Continuous clusters (item),box hypergeometric 0.1,aqim_box_insp_unit.csv,,,200,item,beta,"[0.48657, 69.02343]",clustered,continuous,100,,boxes,hypergeometric,0.1,random,1

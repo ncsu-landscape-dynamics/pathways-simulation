@@ -1,19 +1,19 @@
 name,consignment name,inspection name,consignment/boxes/min,consignment/boxes/max,consignment/items_per_box/default,contamination/contamination_unit,contamination/contamination_rate/distribution,contamination/contamination_rate/parameters,contamination/contamination_rate/value,contamination/arrangement,contamination/clustered/distribution,contamination/clustered/contaminated_units_per_cluster,contamination/clustered/random/cluster_item_width,inspection/unit,inspection/min_boxes,inspection/sample_strategy,inspection/proportion/value,inspection/hypergeometric/detection_level,inspection/selection_strategy,inspection/within_box_proportion,inspection/cluster/cluster_selection,
-contaminate validation 1,item 0.01 clustered random,box proportion convenience,10,10,100,item,fixed_value,,0.01,clustered,random,50,100,boxes,0,proportion,0,,convenience,1,,item 0.01 clustered random
-contaminate validation 2,item 0.01 clustered continuous,box proportion convenience,10,10,100,item,fixed_value,,0.01,clustered,continuous,50,,boxes,0,proportion,0,,convenience,1,,item 0.01 clustered continuous
 contaminate validation 3,item 0.01 random ,box proportion convenience,10,10,100,item,fixed_value,,0.01,random,,,,boxes,0,proportion,0,,convenience,1,,item 0.01 random 
-contaminate validation 4,box 0.01 clustered ,box proportion convenience,10,10,100,box,fixed_value,,0.01,clustered,,2,,boxes,0,proportion,0,,convenience,1,,box 0.01 clustered 
-contaminate validation 5,box 0.01 random ,box proportion convenience,10,10,100,box,fixed_value,,0.01,random,,,,boxes,0,proportion,0,,convenience,1,,box 0.01 random 
-contaminate validation 6,item 0.1 clustered random,box proportion convenience,10,10,100,item,fixed_value,,0.1,clustered,random,50,100,boxes,0,proportion,0,,convenience,1,,item 0.1 clustered random
-contaminate validation 7,item 0.1 clustered continuous,box proportion convenience,10,10,100,item,fixed_value,,0.1,clustered,continuous,50,,boxes,0,proportion,0,,convenience,1,,item 0.1 clustered continuous
 contaminate validation 8,item 0.1 random ,box proportion convenience,10,10,100,item,fixed_value,,0.1,random,,,,boxes,0,proportion,0,,convenience,1,,item 0.1 random 
-contaminate validation 9,box 0.1 clustered ,box proportion convenience,10,10,100,box,fixed_value,,0.1,clustered,,2,,boxes,0,proportion,0,,convenience,1,,box 0.1 clustered 
-contaminate validation 10,box 0.1 random ,box proportion convenience,10,10,100,box,fixed_value,,0.1,random,,,,boxes,0,proportion,0,,convenience,1,,box 0.1 random 
+contaminate validation 1,item 0.01 clustered random,box proportion convenience,10,10,100,item,fixed_value,,0.01,clustered,random,50,100,boxes,0,proportion,0,,convenience,1,,item 0.01 clustered random
+contaminate validation 6,item 0.1 clustered random,box proportion convenience,10,10,100,item,fixed_value,,0.1,clustered,random,50,100,boxes,0,proportion,0,,convenience,1,,item 0.1 clustered random
+contaminate validation 2,item 0.01 clustered continuous,box proportion convenience,10,10,100,item,fixed_value,,0.01,clustered,continuous,50,,boxes,0,proportion,0,,convenience,1,,item 0.01 clustered continuous
+contaminate validation 7,item 0.1 clustered continuous,box proportion convenience,10,10,100,item,fixed_value,,0.1,clustered,continuous,50,,boxes,0,proportion,0,,convenience,1,,item 0.1 clustered continuous
+contaminate validation 13,item 0.2 random ,box proportion convenience,10,10,100,item,fixed_value,,0.2,random,,,,boxes,0,proportion,0,,convenience,1,,item 0.2 random 
 contaminate validation 11,item 0.2 clustered random,box proportion convenience,10,10,100,item,fixed_value,,0.2,clustered,random,50,100,boxes,0,proportion,0,,convenience,1,,item 0.2 clustered random
 contaminate validation 12,item 0.2 clustered continuous,box proportion convenience,10,10,100,item,fixed_value,,0.2,clustered,continuous,50,,boxes,0,proportion,0,,convenience,1,,item 0.2 clustered continuous
-contaminate validation 13,item 0.2 random ,box proportion convenience,10,10,100,item,fixed_value,,0.2,random,,,,boxes,0,proportion,0,,convenience,1,,item 0.2 random 
-contaminate validation 14,box 0.2 clustered ,box proportion convenience,10,10,100,box,fixed_value,,0.2,clustered,,2,,boxes,0,proportion,0,,convenience,1,,box 0.2 clustered 
+contaminate validation 5,box 0.01 random ,box proportion convenience,10,10,100,box,fixed_value,,0.01,random,,,,boxes,0,proportion,0,,convenience,1,,box 0.01 random 
+contaminate validation 4,box 0.01 clustered ,box proportion convenience,10,10,100,box,fixed_value,,0.01,clustered,,2,,boxes,0,proportion,0,,convenience,1,,box 0.01 clustered 
+contaminate validation 10,box 0.1 random ,box proportion convenience,10,10,100,box,fixed_value,,0.1,random,,,,boxes,0,proportion,0,,convenience,1,,box 0.1 random 
+contaminate validation 9,box 0.1 clustered ,box proportion convenience,10,10,100,box,fixed_value,,0.1,clustered,,2,,boxes,0,proportion,0,,convenience,1,,box 0.1 clustered 
 contaminate validation 15,box 0.2 random ,box proportion convenience,10,10,100,box,fixed_value,,0.2,random,,,,boxes,0,proportion,0,,convenience,1,,box 0.2 random 
+contaminate validation 14,box 0.2 clustered ,box proportion convenience,10,10,100,box,fixed_value,,0.2,clustered,,2,,boxes,0,proportion,0,,convenience,1,,box 0.2 clustered 
 contaminate validation 16,item beta clustered random,box proportion convenience,100,100,100,item,beta,"[0.760265625, 107.849109375]",,clustered,random,90,100,boxes,0,proportion,0,,convenience,1,,item beta clustered random
 contaminate validation 17,item beta clustered continuous,box proportion convenience,100,100,100,item,beta,"[0.760265625, 107.849109375]",,clustered,continuous,50,,boxes,0,proportion,0,,convenience,1,,item beta clustered continuous
 contaminate validation 18,item beta random ,box proportion convenience,100,100,100,item,beta,"[0.760265625, 107.849109375]",,random,,,,boxes,0,proportion,0,,convenience,1,,item beta random 

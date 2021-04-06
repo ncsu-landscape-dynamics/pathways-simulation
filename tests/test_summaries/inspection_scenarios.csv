@@ -1,19 +1,19 @@
 name,consignment name,inspection name,aqim_file,contamination/contamination_rate/parameters,contamination/arrangement,contamination/clustered/distribution,contamination/clustered/contaminated_units_per_cluster,inspection/unit,inspection/sample_strategy,inspection/proportion/value,inspection/hypergeometric/detection_level,inspection/selection_strategy,inspection/within_box_proportion,inspection/cluster/cluster_selection
-inspection scenario 1,aqim calibrated ,item hypergeometric random,aqim_all.csv,"[0.0102, 5.3839]",clustered,random,2,items,hypergeometric,,0.05,random,1,
-inspection scenario 2,aqim calibrated,item hypergeometric convenience,aqim_all.csv,"[0.0102, 5.3839]",clustered,random,2,items,hypergeometric,,0.05,convenience,1,
-inspection scenario 3,aqim calibrated,item hypergeometric interval cluster,aqim_all.csv,"[0.0102, 5.3839]",clustered,random,2,items,hypergeometric,,0.05,cluster,0.1,interval
-inspection scenario 4,aqim calibrated,item hypergeometric random cluster,aqim_all.csv,"[0.0102, 5.3839]",clustered,random,2,items,hypergeometric,,0.05,cluster,0.1,random
-inspection scenario 5,aqim calibrated,item hypergeometric random,aqim_all.csv,"[0.0102, 5.3839]",clustered,random,2,items,hypergeometric,,0.1,random,1,
-inspection scenario 6,aqim calibrated,item hypergeometric convenience,aqim_all.csv,"[0.0102, 5.3839]",clustered,random,2,items,hypergeometric,,0.1,convenience,1,
-inspection scenario 7,aqim calibrated,item hypergeometric interval cluster,aqim_all.csv,"[0.0102, 5.3839]",clustered,random,2,items,hypergeometric,,0.1,cluster,0.1,interval
-inspection scenario 8,aqim calibrated,item hypergeometric random cluster,aqim_all.csv,"[0.0102, 5.3839]",clustered,random,2,items,hypergeometric,,0.1,cluster,0.1,random
-inspection scenario 9,aqim calibrated,item proportion random,aqim_all.csv,"[0.0102, 5.3839]",clustered,random,2,items,proportion,0.02,,random,1,
-inspection scenario 10,aqim calibrated,item proportion convenience,aqim_all.csv,"[0.0102, 5.3839]",clustered,random,2,items,proportion,0.02,,convenience,1,
-inspection scenario 11,aqim calibrated,item proportion interval cluster,aqim_all.csv,"[0.0102, 5.3839]",clustered,random,2,items,proportion,0.02,,cluster,0.1,interval
-inspection scenario 12,aqim calibrated,item proportion random cluster,aqim_all.csv,"[0.0102, 5.3839]",clustered,random,2,items,proportion,0.02,,cluster,0.1,random
-inspection scenario 13,aqim calibrated,box hypergeometric random,aqim_all.csv,"[0.0102, 5.3839]",clustered,random,2,boxes,hypergeometric,,0.05,random,1,
-inspection scenario 14,aqim calibrated,box hypergeometric convenience,aqim_all.csv,"[0.0102, 5.3839]",clustered,random,2,boxes,hypergeometric,,0.05,convenience,1,
-inspection scenario 15,aqim calibrated,box hypergeometric random,aqim_all.csv,"[0.0102, 5.3839]",clustered,random,2,boxes,hypergeometric,,0.1,random,1,
-inspection scenario 16,aqim calibrated,box hypergeometric convenience,aqim_all.csv,"[0.0102, 5.3839]",clustered,random,2,boxes,hypergeometric,,0.1,convenience,1,
-inspection scenario 17,aqim calibrated,box proportion random,aqim_all.csv,"[0.0102, 5.3839]",clustered,random,2,boxes,proportion,0.02,,random,1,
-inspection scenario 18,aqim calibrated,box proportion convenience,aqim_all.csv,"[0.0102, 5.3839]",clustered,random,2,boxes,proportion,0.02,,convenience,1,
+inspection scenario 1,aqim calibrated ,item hypergeometric random,aqim_box_insp_unit.csv,"[0.0102, 5.3839]",clustered,random,2,items,hypergeometric,,0.05,random,1,
+inspection scenario 2,aqim calibrated,item hypergeometric convenience,aqim_box_insp_unit.csv,"[0.0102, 5.3839]",clustered,random,2,items,hypergeometric,,0.05,convenience,1,
+inspection scenario 3,aqim calibrated,item hypergeometric interval cluster,aqim_box_insp_unit.csv,"[0.0102, 5.3839]",clustered,random,2,items,hypergeometric,,0.05,cluster,0.1,interval
+inspection scenario 4,aqim calibrated,item hypergeometric random cluster,aqim_box_insp_unit.csv,"[0.0102, 5.3839]",clustered,random,2,items,hypergeometric,,0.05,cluster,0.1,random
+inspection scenario 5,aqim calibrated,item hypergeometric random,aqim_box_insp_unit.csv,"[0.0102, 5.3839]",clustered,random,2,items,hypergeometric,,0.1,random,1,
+inspection scenario 6,aqim calibrated,item hypergeometric convenience,aqim_box_insp_unit.csv,"[0.0102, 5.3839]",clustered,random,2,items,hypergeometric,,0.1,convenience,1,
+inspection scenario 7,aqim calibrated,item hypergeometric interval cluster,aqim_box_insp_unit.csv,"[0.0102, 5.3839]",clustered,random,2,items,hypergeometric,,0.1,cluster,0.1,interval
+inspection scenario 8,aqim calibrated,item hypergeometric random cluster,aqim_box_insp_unit.csv,"[0.0102, 5.3839]",clustered,random,2,items,hypergeometric,,0.1,cluster,0.1,random
+inspection scenario 9,aqim calibrated,item proportion random,aqim_box_insp_unit.csv,"[0.0102, 5.3839]",clustered,random,2,items,proportion,0.02,,random,1,
+inspection scenario 10,aqim calibrated,item proportion convenience,aqim_box_insp_unit.csv,"[0.0102, 5.3839]",clustered,random,2,items,proportion,0.02,,convenience,1,
+inspection scenario 11,aqim calibrated,item proportion interval cluster,aqim_box_insp_unit.csv,"[0.0102, 5.3839]",clustered,random,2,items,proportion,0.02,,cluster,0.1,interval
+inspection scenario 12,aqim calibrated,item proportion random cluster,aqim_box_insp_unit.csv,"[0.0102, 5.3839]",clustered,random,2,items,proportion,0.02,,cluster,0.1,random
+inspection scenario 13,aqim calibrated,box hypergeometric random,aqim_box_insp_unit.csv,"[0.0102, 5.3839]",clustered,random,2,boxes,hypergeometric,,0.05,random,1,
+inspection scenario 14,aqim calibrated,box hypergeometric convenience,aqim_box_insp_unit.csv,"[0.0102, 5.3839]",clustered,random,2,boxes,hypergeometric,,0.05,convenience,1,
+inspection scenario 15,aqim calibrated,box hypergeometric random,aqim_box_insp_unit.csv,"[0.0102, 5.3839]",clustered,random,2,boxes,hypergeometric,,0.1,random,1,
+inspection scenario 16,aqim calibrated,box hypergeometric convenience,aqim_box_insp_unit.csv,"[0.0102, 5.3839]",clustered,random,2,boxes,hypergeometric,,0.1,convenience,1,
+inspection scenario 17,aqim calibrated,box proportion random,aqim_box_insp_unit.csv,"[0.0102, 5.3839]",clustered,random,2,boxes,proportion,0.02,,random,1,
+inspection scenario 18,aqim calibrated,box proportion convenience,aqim_box_insp_unit.csv,"[0.0102, 5.3839]",clustered,random,2,boxes,proportion,0.02,,convenience,1,
